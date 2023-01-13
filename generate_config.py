@@ -13,8 +13,17 @@ configFile.set("default", "localPathToOrc", r"C:\Users\sandeep.tadde\Desktop\dat
 configFile.set("default", "localPathToLogs", r"E:\AWSPOC\logs\task1.log")
 configFile.set("default", "bucketName", "snowflakeusingsns")
 
-configFile.set("credentials", "accessKey", "<AccessKey>")
-configFile.set("credentials", "secretKey", "<SecretKey>")
+configFile.set("credentials", "accessKey", "AKIARCWOZRROUSSAAB4H")
+configFile.set("credentials", "secretKey", "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")
+
+# TASK 3
+configFile.set("default", "srcHost", "database-1.cdojfx1iohkq.us-east-1.rds.amazonaws.com")
+configFile.set("credentials", "srcUser", "admin")
+configFile.set("credentials", "srcPassword", "12345678")
+
+configFile.set("default", "desHost", "database-3.cdojfx1iohkq.us-east-1.rds.amazonaws.com")
+configFile.set("credentials", "desUser", "postgres")
+configFile.set("credentials", "desPassword", "abcdefghijkl")
 
 # SAVE CONFIG FILE
 with open(r"configurations.ini", 'w') as configFileObj:
